@@ -1,0 +1,1339 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SamacSys_Parts
+LIBS:ESP32-footprints-Shem-Lib
+LIBS:espressif-xess
+LIBS:coach-in_esp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 5B2C6EF6
+P 8300 1550
+F 0 "#PWR01" H 8300 1300 50  0001 C CNN
+F 1 "GND" H 8300 1400 50  0000 C CNN
+F 2 "" H 8300 1550 50  0001 C CNN
+F 3 "" H 8300 1550 50  0001 C CNN
+	1    8300 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP-32S U1
+U 1 1 5B2E9D4C
+P 7200 2300
+F 0 "U1" H 6500 3550 60  0000 C CNN
+F 1 "ESP-32S" H 7700 3550 60  0000 C CNN
+F 2 "ESP32-footprints-Lib:ESP-32S" H 7550 3650 60  0001 C CNN
+F 3 "" H 6750 2750 60  0001 C CNN
+	1    7200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT231XS-R IC1
+U 1 1 5B2E9EB2
+P 1400 2750
+F 0 "IC1" H 2550 3050 50  0000 L CNN
+F 1 "FT231XS-R" H 2550 2950 50  0000 L CNN
+F 2 "SamacSys_Parts:SOP64P599X175-20N" H 2550 2850 50  0001 L CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/1102/0900766b811020d3.pdf" H 2550 2750 50  0001 L CNN
+F 4 "FTDI Chip FT231XS-R, Interface RS232, RS422, RS485, SIE, UART 3MBd, 5 V, 20-pin, SSOP" H 2550 2650 50  0001 L CNN "Description"
+F 5 "1.7526" H 2550 2550 50  0001 L CNN "Height"
+F 6 "FTDI Chip" H 2550 2450 50  0001 L CNN "Manufacturer_Name"
+F 7 "FT231XS-R" H 2550 2350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "7570032P" H 2550 2250 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/7570032P" H 2550 2150 50  0001 L CNN "RS Price/Stock"
+F 10 "FT231XS-R" H 2550 2050 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/ft231xs-r/ftdi-chip" H 2550 1950 50  0001 L CNN "Arrow Price/Stock"
+	1    1400 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6250 1800 0    60   BiDi ~ 0
+RESET
+Text GLabel 6250 1900 0    60   BiDi ~ 0
+VP
+Text GLabel 6250 2000 0    60   BiDi ~ 0
+VN
+Text GLabel 6250 2100 0    60   BiDi ~ 0
+IO34
+Text GLabel 6250 2200 0    60   BiDi ~ 0
+IO35
+Text GLabel 6250 2300 0    60   BiDi ~ 0
+IO32
+Text GLabel 6250 2400 0    60   BiDi ~ 0
+IO33
+Text GLabel 6250 2500 0    60   BiDi ~ 0
+IO25
+Text GLabel 6250 2600 0    60   BiDi ~ 0
+IO26
+Text GLabel 6250 2700 0    60   BiDi ~ 0
+IO27
+Text GLabel 6250 2800 0    60   BiDi ~ 0
+IO14
+Text GLabel 6250 2900 0    60   BiDi ~ 0
+IO12
+Text GLabel 6850 3350 3    60   BiDi ~ 0
+IO13
+Text GLabel 6950 3350 3    60   BiDi ~ 0
+SD2
+Text GLabel 7050 3350 3    60   BiDi ~ 0
+SD3
+Text GLabel 7150 3350 3    60   BiDi ~ 0
+CMD
+Text GLabel 7250 3350 3    60   BiDi ~ 0
+CLK
+Text GLabel 7350 3350 3    60   BiDi ~ 0
+SD0
+Text GLabel 7450 3350 3    60   BiDi ~ 0
+SD1
+Text GLabel 7550 3350 3    60   BiDi ~ 0
+IO15
+Text GLabel 7650 3350 3    60   BiDi ~ 0
+IO2
+Text GLabel 8100 2950 2    60   BiDi ~ 0
+IO0
+Text GLabel 8100 2850 2    60   BiDi ~ 0
+IO4
+Text GLabel 8100 2750 2    60   BiDi ~ 0
+IO16
+Text GLabel 8100 2650 2    60   BiDi ~ 0
+IO17
+Text GLabel 8100 2550 2    60   BiDi ~ 0
+IO5
+Text GLabel 8100 2450 2    60   BiDi ~ 0
+IO18
+Text GLabel 8100 2350 2    60   BiDi ~ 0
+IO19
+Text GLabel 8100 2150 2    60   BiDi ~ 0
+IO21
+Text GLabel 8100 2050 2    60   BiDi ~ 0
+RXD0
+Text GLabel 8100 1950 2    60   BiDi ~ 0
+TXD0
+Text GLabel 8100 1850 2    60   BiDi ~ 0
+IO22
+Text GLabel 8100 1750 2    60   BiDi ~ 0
+IO23
+NoConn ~ 2600 6350
+$Comp
+L GND #PWR02
+U 1 1 5B2EC35F
+P 4200 6450
+F 0 "#PWR02" H 4200 6200 50  0001 C CNN
+F 1 "GND" H 4200 6300 50  0000 C CNN
+F 2 "" H 4200 6450 50  0001 C CNN
+F 3 "" H 4200 6450 50  0001 C CNN
+	1    4200 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C9
+U 1 1 5B2EC804
+P 2300 6200
+F 0 "C9" H 2325 6300 50  0000 L CNN
+F 1 "10u" H 2325 6100 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 2300 6200 50  0001 C CNN
+F 3 "" H 2300 6200 50  0001 C CNN
+	1    2300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C10
+U 1 1 5B2EC833
+P 4400 6200
+F 0 "C10" H 4425 6300 50  0000 L CNN
+F 1 "10u" H 4425 6100 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 4400 6200 50  0001 C CNN
+F 3 "" H 4400 6200 50  0001 C CNN
+	1    4400 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 6050 2    60   BiDi ~ 0
+VIN
+$Comp
+L +3.3V #PWR03
+U 1 1 5B2ECA26
+P 1950 6000
+F 0 "#PWR03" H 1950 5850 50  0001 C CNN
+F 1 "+3.3V" H 1950 6140 50  0000 C CNN
+F 2 "" H 1950 6000 50  0001 C CNN
+F 3 "" H 1950 6000 50  0001 C CNN
+	1    1950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 5B2ECAF2
+P 5500 1700
+F 0 "#PWR04" H 5500 1550 50  0001 C CNN
+F 1 "+3.3V" H 5500 1840 50  0000 C CNN
+F 2 "" H 5500 1700 50  0001 C CNN
+F 3 "" H 5500 1700 50  0001 C CNN
+	1    5500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP73831T-2ATI_OT IC3
+U 1 1 5B2ECCFB
+P 2750 7000
+F 0 "IC3" H 3700 7300 50  0000 L CNN
+F 1 "MCP73831T-2ATI_OT" H 3700 7200 50  0000 L CNN
+F 2 "SamacSys_Parts:SOT95P270X145-5N" H 3700 7100 50  0001 L CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/1381/0900766b81381747.pdf" H 3700 7000 50  0001 L CNN
+F 4 "Microchip MCP73831T-2ATI/OT, Battery Charge Controller Lithium-Ion/Polymer, 500mA, 5-pin SOT-23" H 3700 6900 50  0001 L CNN "Description"
+F 5 "1.45" H 3700 6800 50  0001 L CNN "Height"
+F 6 "Microchip" H 3700 6700 50  0001 L CNN "Manufacturer_Name"
+F 7 "MCP73831T-2ATI/OT" H 3700 6600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "7386617P" H 3700 6500 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/7386617P" H 3700 6400 50  0001 L CNN "RS Price/Stock"
+F 10 "70388655" H 3700 6300 50  0001 L CNN "Allied_Number"
+F 11 "http://www.alliedelec.com/microchip-technology-inc-mcp73831t-2ati-ot/70388655/" H 3700 6200 50  0001 L CNN "Allied Price/Stock"
+F 12 "MCP73831T-2ATI/OT" H 3700 6100 50  0001 L CNN "Arrow Part Number"
+F 13 "https://www.arrow.com/en/products/mcp73831t-2atiot/microchip-technology" H 3700 6000 50  0001 L CNN "Arrow Price/Stock"
+	1    2750 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 5B2ECE1D
+P 3850 7250
+F 0 "R12" V 3930 7250 50  0000 C CNN
+F 1 "R" V 3850 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3780 7250 50  0001 C CNN
+F 3 "" H 3850 7250 50  0001 C CNN
+	1    3850 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 5B2ECE79
+P 4250 7150
+F 0 "C12" H 4275 7250 50  0000 L CNN
+F 1 "4.7u" H 4275 7050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4288 7000 50  0001 C CNN
+F 3 "" H 4250 7150 50  0001 C CNN
+	1    4250 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 5B2ECEB4
+P 2100 7400
+F 0 "C13" H 2125 7500 50  0000 L CNN
+F 1 "4.7u" H 2125 7300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2138 7250 50  0001 C CNN
+F 3 "" H 2100 7400 50  0001 C CNN
+	1    2100 7400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4550 7000 2    60   BiDi ~ 0
+VBUS
+$Comp
+L LED D5
+U 1 1 5B2ED048
+P 3500 6750
+F 0 "D5" H 3500 6850 50  0000 C CNN
+F 1 "LED" H 3500 6650 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 3500 6750 50  0001 C CNN
+F 3 "" H 3500 6750 50  0001 C CNN
+	1    3500 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 5B2ED08D
+P 3150 6750
+F 0 "R11" V 3230 6750 50  0000 C CNN
+F 1 "R" V 3150 6750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 6750 50  0001 C CNN
+F 3 "" H 3150 6750 50  0001 C CNN
+	1    3150 6750
+	0    1    1    0   
+$EndComp
+Text GLabel 1950 7200 0    60   BiDi ~ 0
+VBAT
+$Comp
+L ZX62-B-5PA(33) J1
+U 1 1 5B2EDEC0
+P 1100 1500
+F 0 "J1" H 1750 1800 50  0000 L CNN
+F 1 "USB_CONN" H 1750 1700 50  0000 L CNN
+F 2 "SamacSys_Parts:ZX62-B-5PA(33)" H 1750 1600 50  0001 L CNN
+F 3 "http://www.mouser.com/ds/2/185/ZX_catalog-939768.pdf" H 1750 1500 50  0001 L CNN
+F 4 "USB Connectors MICRO B RECEPT RA SMT BTTM MNT" H 1750 1400 50  0001 L CNN "Description"
+F 5 "" H 1750 1300 50  0001 L CNN "Height"
+F 6 "Hirose" H 1750 1200 50  0001 L CNN "Manufacturer_Name"
+F 7 "ZX62-B-5PA(33)" H 1750 1100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "1362267" H 1750 1000 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/1362267" H 1750 900 50  0001 L CNN "RS Price/Stock"
+F 10 "ZX62-B-5PA(33)" H 1750 800 50  0001 L CNN "Arrow Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1362267" H 1750 700 50  0001 L CNN "Arrow Price/Stock"
+	1    1100 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1900 1600
+$Comp
+L Fuse F1
+U 1 1 5B2EE1E2
+P 1100 1350
+F 0 "F1" V 1180 1350 50  0000 C CNN
+F 1 "Fuse" V 1025 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1812_HandSoldering" V 1030 1350 50  0001 C CNN
+F 3 "" H 1100 1350 50  0001 C CNN
+	1    1100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5B2EE2FF
+P 1100 1700
+F 0 "#PWR05" H 1100 1450 50  0001 C CNN
+F 1 "GND" H 1100 1550 50  0000 C CNN
+F 2 "" H 1100 1700 50  0001 C CNN
+F 3 "" H 1100 1700 50  0001 C CNN
+	1    1100 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 1500 2    60   BiDi ~ 0
+D-
+Text GLabel 1100 1600 0    60   BiDi ~ 0
+D+
+$Comp
+L RB160M-30TR D4
+U 1 1 5B2EE530
+P 3850 5100
+F 0 "D4" H 4300 5300 50  0000 L CNN
+F 1 "RB160M-30TR" H 4300 5200 50  0000 L CNN
+F 2 "SamacSys_Parts:SODFL3516X90N" H 4300 5100 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/RB160M-30TR.pdf" H 4300 5000 50  0001 L CNN
+F 4 "ROHM - RB160M-30TR - DIODE, SCHOTTKY, PMDS" H 4300 4900 50  0001 L CNN "Description"
+F 5 "0.9" H 4300 4800 50  0001 L CNN "Height"
+F 6 "ROHM Semiconductor" H 4300 4700 50  0001 L CNN "Manufacturer_Name"
+F 7 "RB160M-30TR" H 4300 4600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 4300 4500 50  0001 L CNN "RS Part Number"
+F 9 "" H 4300 4400 50  0001 L CNN "RS Price/Stock"
+F 10 "RB160M-30TR" H 4300 4300 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 4300 4200 50  0001 L CNN "Arrow Price/Stock"
+	1    3850 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L DMG3415U-7 Q2
+U 1 1 5B2EE5A7
+P 3200 4800
+F 0 "Q2" H 3850 5100 50  0000 L CNN
+F 1 "DMG3415U-7" H 3850 5000 50  0000 L CNN
+F 2 "SamacSys_Parts:SOT96P240X100-3N" H 3850 4900 50  0001 L CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/104e/0900766b8104e4f0.pdf" H 3850 4800 50  0001 L CNN
+F 4 "P-CHANNEL ENHANCEMENT MODE MOSFET" H 3850 4700 50  0001 L CNN "Description"
+F 5 "1" H 3850 4600 50  0001 L CNN "Height"
+F 6 "Diodes Inc." H 3850 4500 50  0001 L CNN "Manufacturer_Name"
+F 7 "DMG3415U-7" H 3850 4400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "7514095P" H 3850 4300 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/7514095P" H 3850 4200 50  0001 L CNN "RS Price/Stock"
+F 10 "70438036" H 3850 4100 50  0001 L CNN "Allied_Number"
+F 11 "http://www.alliedelec.com/diodes-inc-dmg3415u-7/70438036/" H 3850 4000 50  0001 L CNN "Allied Price/Stock"
+F 12 "DMG3415U-7" H 3850 3900 50  0001 L CNN "Arrow Part Number"
+F 13 "https://www.arrow.com/en/products/dmg3415u-7/diodes-incorporated" H 3850 3800 50  0001 L CNN "Arrow Price/Stock"
+	1    3200 4800
+	-1   0    0    1   
+$EndComp
+Text GLabel 2400 4800 0    60   BiDi ~ 0
+VBAT
+$Comp
+L GND #PWR06
+U 1 1 5B2EE780
+P 3250 5500
+F 0 "#PWR06" H 3250 5250 50  0001 C CNN
+F 1 "GND" H 3250 5350 50  0000 C CNN
+F 2 "" H 3250 5500 50  0001 C CNN
+F 3 "" H 3250 5500 50  0001 C CNN
+	1    3250 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 5100 0    60   BiDi ~ 0
+VBUS
+Text GLabel 4050 4700 2    60   BiDi ~ 0
+VIN
+Text GLabel 3700 3550 2    60   BiDi ~ 0
+D-
+Text GLabel 3700 3650 2    60   BiDi ~ 0
+D+
+$Comp
+L R R6
+U 1 1 5B2EF5AD
+P 3050 3550
+F 0 "R6" V 3130 3550 50  0000 C CNN
+F 1 "R" V 3050 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2980 3550 50  0001 C CNN
+F 3 "" H 3050 3550 50  0001 C CNN
+	1    3050 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 5B2EF76A
+P 3050 3650
+F 0 "R7" V 3130 3650 50  0000 C CNN
+F 1 "R" V 3050 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2980 3650 50  0001 C CNN
+F 3 "" H 3050 3650 50  0001 C CNN
+	1    3050 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5B2EFD16
+P 750 1250
+F 0 "C1" H 775 1350 50  0000 L CNN
+F 1 "0.1u" H 775 1150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 788 1100 50  0001 C CNN
+F 3 "" H 750 1250 50  0001 C CNN
+	1    750  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5B2EFDC1
+P 750 1400
+F 0 "#PWR07" H 750 1150 50  0001 C CNN
+F 1 "GND" H 750 1250 50  0000 C CNN
+F 2 "" H 750 1400 50  0001 C CNN
+F 3 "" H 750 1400 50  0001 C CNN
+	1    750  1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5B2F00DE
+P 3300 3900
+F 0 "C4" H 3325 4000 50  0000 L CNN
+F 1 "47p" H 3325 3800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3338 3750 50  0001 C CNN
+F 3 "" H 3300 3900 50  0001 C CNN
+	1    3300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5B2F0149
+P 3550 3900
+F 0 "C5" H 3575 4000 50  0000 L CNN
+F 1 "47p" H 3575 3800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3588 3750 50  0001 C CNN
+F 3 "" H 3550 3900 50  0001 C CNN
+	1    3550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5B2F0266
+P 3300 4050
+F 0 "#PWR08" H 3300 3800 50  0001 C CNN
+F 1 "GND" H 3300 3900 50  0000 C CNN
+F 2 "" H 3300 4050 50  0001 C CNN
+F 3 "" H 3300 4050 50  0001 C CNN
+	1    3300 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 3050 0    60   BiDi ~ 0
+TXD0
+Text GLabel 2700 2750 2    60   BiDi ~ 0
+RXD0
+Text GLabel 1500 800  2    60   BiDi ~ 0
+VBUS
+$Comp
+L LED D1
+U 1 1 5B2F128E
+P 1350 950
+F 0 "D1" H 1350 1050 50  0000 C CNN
+F 1 "LED" H 1350 850 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 1350 950 50  0001 C CNN
+F 3 "" H 1350 950 50  0001 C CNN
+	1    1350 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5B2F1458
+P 1500 1100
+F 0 "R1" V 1580 1100 50  0000 C CNN
+F 1 "R" V 1500 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1430 1100 50  0001 C CNN
+F 3 "" H 1500 1100 50  0001 C CNN
+	1    1500 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5B2F15B2
+P 1650 1100
+F 0 "#PWR09" H 1650 850 50  0001 C CNN
+F 1 "GND" H 1650 950 50  0000 C CNN
+F 2 "" H 1650 1100 50  0001 C CNN
+F 3 "" H 1650 1100 50  0001 C CNN
+	1    1650 1100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1400 3150
+NoConn ~ 2700 2850
+NoConn ~ 2700 2950
+Text GLabel 2700 3450 2    60   BiDi ~ 0
+3V3OUT
+Text GLabel 1400 2950 0    60   BiDi ~ 0
+VCCIO
+Text GLabel 1400 3650 0    60   BiDi ~ 0
+CBUS2
+Text GLabel 2700 3050 2    60   BiDi ~ 0
+CBUS1
+Text GLabel 2700 3350 2    60   BiDi ~ 0
+RES
+Text GLabel 2800 1550 0    60   BiDi ~ 0
+3V3OUT
+Text GLabel 2800 1700 0    60   BiDi ~ 0
+VCCIO
+$Comp
+L C C2
+U 1 1 5B2F1EC4
+P 3650 1950
+F 0 "C2" H 3675 2050 50  0000 L CNN
+F 1 "0.1u" H 3675 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3688 1800 50  0001 C CNN
+F 3 "" H 3650 1950 50  0001 C CNN
+	1    3650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5B2F1F73
+P 3650 2100
+F 0 "#PWR010" H 3650 1850 50  0001 C CNN
+F 1 "GND" H 3650 1950 50  0000 C CNN
+F 2 "" H 3650 2100 50  0001 C CNN
+F 3 "" H 3650 2100 50  0001 C CNN
+	1    3650 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 1150 1    60   BiDi ~ 0
+RES
+$Comp
+L R R2
+U 1 1 5B2F21BE
+P 3250 1450
+F 0 "R2" V 3330 1450 50  0000 C CNN
+F 1 "10K" V 3250 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3180 1450 50  0001 C CNN
+F 3 "" H 3250 1450 50  0001 C CNN
+	1    3250 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R9
+U 1 1 5B2F3217
+P 3250 5300
+F 0 "R9" V 3330 5300 50  0000 C CNN
+F 1 "R" V 3250 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3180 5300 50  0001 C CNN
+F 3 "" H 3250 5300 50  0001 C CNN
+	1    3250 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 2850 0    60   BiDi ~ 0
+RTS
+Text GLabel 1400 2750 0    60   BiDi ~ 0
+DTR
+NoConn ~ 1400 3350
+NoConn ~ 1400 3450
+NoConn ~ 1400 3550
+$Comp
+L LED D3
+U 1 1 5B2F441E
+P 4550 1400
+F 0 "D3" H 4550 1500 50  0000 C CNN
+F 1 "LED" H 4550 1300 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 4550 1400 50  0001 C CNN
+F 3 "" H 4550 1400 50  0001 C CNN
+	1    4550 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5B2F448A
+P 4550 1700
+F 0 "R4" V 4630 1700 50  0000 C CNN
+F 1 "R" V 4550 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4480 1700 50  0001 C CNN
+F 3 "" H 4550 1700 50  0001 C CNN
+	1    4550 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5B2F4598
+P 4200 1400
+F 0 "D2" H 4200 1500 50  0000 C CNN
+F 1 "LED" H 4200 1300 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 4200 1400 50  0001 C CNN
+F 3 "" H 4200 1400 50  0001 C CNN
+	1    4200 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5B2F459E
+P 4200 1700
+F 0 "R3" V 4280 1700 50  0000 C CNN
+F 1 "R" V 4200 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4130 1700 50  0001 C CNN
+F 3 "" H 4200 1700 50  0001 C CNN
+	1    4200 1700
+	-1   0    0    1   
+$EndComp
+Text GLabel 4200 1850 3    60   BiDi ~ 0
+CBUS1
+Text GLabel 4550 1850 3    60   BiDi ~ 0
+CBUS2
+$Comp
+L CP1 C11
+U 1 1 5B2F52E9
+P 4600 6200
+F 0 "C11" H 4625 6300 50  0000 L CNN
+F 1 "10u" H 4625 6100 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 4600 6200 50  0001 C CNN
+F 3 "" H 4600 6200 50  0001 C CNN
+	1    4600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C8
+U 1 1 5B2F5357
+P 2050 6200
+F 0 "C8" H 2075 6300 50  0000 L CNN
+F 1 "10u" H 2075 6100 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 2050 6200 50  0001 C CNN
+F 3 "" H 2050 6200 50  0001 C CNN
+	1    2050 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3350 3250 2    60   BiDi ~ 0
+VBUS
+Text GLabel 4200 1250 1    60   BiDi ~ 0
+VBUS
+Text GLabel 4550 1250 1    60   BiDi ~ 0
+VBUS
+Text GLabel 5650 3400 2    60   BiDi ~ 0
+RESET
+$Comp
+L +3.3V #PWR011
+U 1 1 5B2F642B
+P 5550 2950
+F 0 "#PWR011" H 5550 2800 50  0001 C CNN
+F 1 "+3.3V" H 5550 3090 50  0000 C CNN
+F 2 "" H 5550 2950 50  0001 C CNN
+F 3 "" H 5550 2950 50  0001 C CNN
+	1    5550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5B2F64B2
+P 5550 3250
+F 0 "R5" V 5630 3250 50  0000 C CNN
+F 1 "10k" V 5550 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5480 3250 50  0001 C CNN
+F 3 "" H 5550 3250 50  0001 C CNN
+	1    5550 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C3
+U 1 1 5B2F661A
+P 5300 3550
+F 0 "C3" H 5325 3650 50  0000 L CNN
+F 1 "100n" H 5325 3450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5338 3400 50  0001 C CNN
+F 3 "" H 5300 3550 50  0001 C CNN
+	1    5300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 5B2F6716
+P 5300 3850
+F 0 "#PWR012" H 5300 3600 50  0001 C CNN
+F 1 "GND" H 5300 3700 50  0000 C CNN
+F 2 "" H 5300 3850 50  0001 C CNN
+F 3 "" H 5300 3850 50  0001 C CNN
+	1    5300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 5B2F7B33
+P 5550 3900
+F 0 "#PWR013" H 5550 3650 50  0001 C CNN
+F 1 "GND" H 5550 3750 50  0000 C CNN
+F 2 "" H 5550 3900 50  0001 C CNN
+F 3 "" H 5550 3900 50  0001 C CNN
+	1    5550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J5
+U 1 1 5B2F8654
+P 6000 7350
+F 0 "J5" H 6000 7450 50  0000 C CNN
+F 1 "EXT_VIN" H 6000 7150 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B2B-PH-K_02x2.00mm_Straight" H 6000 7350 50  0001 C CNN
+F 3 "" H 6000 7350 50  0001 C CNN
+	1    6000 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J4
+U 1 1 5B2F890D
+P 6000 6900
+F 0 "J4" H 6000 7000 50  0000 C CNN
+F 1 "battery" H 6000 6700 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 6000 6900 50  0001 C CNN
+F 3 "" H 6000 6900 50  0001 C CNN
+	1    6000 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5B2F8A32
+P 5500 6900
+F 0 "#PWR014" H 5500 6650 50  0001 C CNN
+F 1 "GND" H 5500 6750 50  0000 C CNN
+F 2 "" H 5500 6900 50  0001 C CNN
+F 3 "" H 5500 6900 50  0001 C CNN
+	1    5500 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 5650 7150 0    60   BiDi ~ 0
+VBAT
+Text GLabel 5600 7550 0    60   BiDi ~ 0
+VIN
+$Comp
+L GND #PWR015
+U 1 1 5B2F8DF8
+P 5250 7350
+F 0 "#PWR015" H 5250 7100 50  0001 C CNN
+F 1 "GND" H 5250 7200 50  0000 C CNN
+F 2 "" H 5250 7350 50  0001 C CNN
+F 3 "" H 5250 7350 50  0001 C CNN
+	1    5250 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC4081T106R Q1
+U 1 1 5B2F91C1
+P 5450 4750
+F 0 "Q1" H 6800 5050 50  0000 L CNN
+F 1 "2SC4081T106R" H 6800 4950 50  0000 L CNN
+F 2 "SamacSys_Parts:SOT65P210X90-3N" H 6800 4850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/2SC4081T106R.pdf" H 6800 4750 50  0001 L CNN
+F 4 "ROHM - 2SC4081T106R - TRANSISTOR,NPN,50V,0.15A,SOT-323" H 6800 4650 50  0001 L CNN "Description"
+F 5 "0.9" H 6800 4550 50  0001 L CNN "Height"
+F 6 "ROHM Semiconductor" H 6800 4450 50  0001 L CNN "Manufacturer_Name"
+F 7 "2SC4081T106R" H 6800 4350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "0196906" H 6800 4250 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/0196906" H 6800 4150 50  0001 L CNN "RS Price/Stock"
+F 10 "2SC4081T106R" H 6800 4050 50  0001 L CNN "Arrow Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/0196906" H 6800 3950 50  0001 L CNN "Arrow Price/Stock"
+	1    5450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2SC4081T106R Q3
+U 1 1 5B2F9297
+P 5450 5300
+F 0 "Q3" H 6800 5600 50  0000 L CNN
+F 1 "2SC4081T106R" H 6800 5500 50  0000 L CNN
+F 2 "SamacSys_Parts:SOT65P210X90-3N" H 6800 5400 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/2SC4081T106R.pdf" H 6800 5300 50  0001 L CNN
+F 4 "ROHM - 2SC4081T106R - TRANSISTOR,NPN,50V,0.15A,SOT-323" H 6800 5200 50  0001 L CNN "Description"
+F 5 "0.9" H 6800 5100 50  0001 L CNN "Height"
+F 6 "ROHM Semiconductor" H 6800 5000 50  0001 L CNN "Manufacturer_Name"
+F 7 "2SC4081T106R" H 6800 4900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "0196906" H 6800 4800 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/0196906" H 6800 4700 50  0001 L CNN "RS Price/Stock"
+F 10 "2SC4081T106R" H 6800 4600 50  0001 L CNN "Arrow Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/0196906" H 6800 4500 50  0001 L CNN "Arrow Price/Stock"
+	1    5450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5B2F93E9
+P 5300 4750
+F 0 "R8" V 5380 4750 50  0000 C CNN
+F 1 "10k" V 5300 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5230 4750 50  0001 C CNN
+F 3 "" H 5300 4750 50  0001 C CNN
+	1    5300 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R10
+U 1 1 5B2F948A
+P 5300 5300
+F 0 "R10" V 5380 5300 50  0000 C CNN
+F 1 "10k" V 5300 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5230 5300 50  0001 C CNN
+F 3 "" H 5300 5300 50  0001 C CNN
+	1    5300 5300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5150 4750 0    60   BiDi ~ 0
+DTR
+Text GLabel 5450 5400 0    60   BiDi ~ 0
+DTR
+Text GLabel 5450 4850 0    60   BiDi ~ 0
+RTS
+Text GLabel 5150 5300 0    60   BiDi ~ 0
+RTS
+Text GLabel 6950 5300 2    60   BiDi ~ 0
+IO0
+Text GLabel 6950 4750 2    60   BiDi ~ 0
+RESET
+$Comp
+L Conn_02x16_Odd_Even J2
+U 1 1 5B2FADD0
+P 10000 1850
+F 0 "J2" H 10050 2650 50  0000 C CNN
+F 1 "HEADER" H 10050 950 50  0000 C CNN
+F 2 "DF12HEADER:DF123530DP05V86" H 10000 1850 50  0001 C CNN
+F 3 "" H 10000 1850 50  0001 C CNN
+	1    10000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5B2FCC1C
+P 9150 1150
+F 0 "#PWR016" H 9150 900 50  0001 C CNN
+F 1 "GND" H 9150 1000 50  0000 C CNN
+F 2 "" H 9150 1150 50  0001 C CNN
+F 3 "" H 9150 1150 50  0001 C CNN
+	1    9150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR017
+U 1 1 5B2FCE09
+P 10650 1150
+F 0 "#PWR017" H 10650 1000 50  0001 C CNN
+F 1 "+3.3V" H 10650 1290 50  0000 C CNN
+F 2 "" H 10650 1150 50  0001 C CNN
+F 3 "" H 10650 1150 50  0001 C CNN
+	1    10650 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 1250 0    60   BiDi ~ 0
+VP
+Text GLabel 10300 1250 2    60   BiDi ~ 0
+VN
+Text GLabel 9800 1350 0    60   BiDi ~ 0
+IO34
+Text GLabel 10300 1350 2    60   BiDi ~ 0
+IO35
+Text GLabel 9800 1450 0    60   BiDi ~ 0
+IO32
+Text GLabel 10300 1450 2    60   BiDi ~ 0
+IO33
+Text GLabel 9800 1550 0    60   BiDi ~ 0
+IO25
+Text GLabel 10300 1550 2    60   BiDi ~ 0
+IO26
+Text GLabel 9800 1650 0    60   BiDi ~ 0
+IO27
+Text GLabel 10300 1650 2    60   BiDi ~ 0
+IO14
+Text GLabel 9800 1750 0    60   BiDi ~ 0
+IO12
+Text GLabel 10300 1750 2    60   BiDi ~ 0
+IO13
+Text GLabel 9800 1850 0    60   BiDi ~ 0
+IO15
+Text GLabel 10300 1850 2    60   BiDi ~ 0
+IO2
+Text GLabel 9800 1950 0    60   BiDi ~ 0
+IO0
+Text GLabel 10300 1950 2    60   BiDi ~ 0
+IO4
+Text GLabel 9800 2050 0    60   BiDi ~ 0
+IO16
+Text GLabel 10300 2050 2    60   BiDi ~ 0
+IO17
+Text GLabel 9800 2150 0    60   BiDi ~ 0
+IO5
+Text GLabel 10300 2150 2    60   BiDi ~ 0
+IO18
+Text GLabel 9800 2250 0    60   BiDi ~ 0
+IO19
+Text GLabel 10300 2250 2    60   BiDi ~ 0
+IO21
+Text GLabel 9800 2350 0    60   BiDi ~ 0
+IO22
+Text GLabel 10300 2350 2    60   BiDi ~ 0
+IO23
+Text GLabel 9800 2450 0    60   BiDi ~ 0
+RXD0
+Text GLabel 10300 2450 2    60   BiDi ~ 0
+TXD0
+$Comp
+L +3.3V #PWR018
+U 1 1 5B2FE36C
+P 9350 2550
+F 0 "#PWR018" H 9350 2400 50  0001 C CNN
+F 1 "+3.3V" H 9350 2690 50  0000 C CNN
+F 2 "" H 9350 2550 50  0001 C CNN
+F 3 "" H 9350 2550 50  0001 C CNN
+	1    9350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 5B2FE47E
+P 10550 2550
+F 0 "#PWR019" H 10550 2300 50  0001 C CNN
+F 1 "GND" H 10550 2400 50  0000 C CNN
+F 2 "" H 10550 2550 50  0001 C CNN
+F 3 "" H 10550 2550 50  0001 C CNN
+	1    10550 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8250 4450 2    60   BiDi ~ 0
+SD2
+Text GLabel 8250 4350 2    60   BiDi ~ 0
+SD3
+Text GLabel 8250 4250 2    60   BiDi ~ 0
+CMD
+Text GLabel 8250 4150 2    60   BiDi ~ 0
+CLK
+Text GLabel 8250 4050 2    60   BiDi ~ 0
+SD0
+Text GLabel 8250 3950 2    60   BiDi ~ 0
+SD1
+NoConn ~ 8250 3950
+NoConn ~ 8250 4050
+NoConn ~ 8250 4150
+NoConn ~ 8250 4250
+NoConn ~ 8250 4350
+NoConn ~ 8250 4450
+Wire Wire Line
+	8200 1650 8100 1650
+Wire Wire Line
+	8200 800  8200 1650
+Wire Wire Line
+	4200 6150 4200 6450
+Connection ~ 4200 6250
+Wire Wire Line
+	4000 6350 4100 6350
+Wire Wire Line
+	4100 6350 4100 6050
+Wire Wire Line
+	2600 6150 2500 6150
+Wire Wire Line
+	2500 6150 2500 6050
+Wire Wire Line
+	1950 6000 1950 6050
+Wire Wire Line
+	5500 1700 6250 1700
+Wire Wire Line
+	2600 7100 2600 7550
+Wire Wire Line
+	2600 7100 2750 7100
+Wire Wire Line
+	2600 7350 3600 7350
+Wire Wire Line
+	3600 7350 3600 7400
+Wire Wire Line
+	3600 7400 3850 7400
+Wire Wire Line
+	3850 7000 4550 7000
+Connection ~ 4250 7000
+Wire Wire Line
+	2750 7000 2750 6750
+Wire Wire Line
+	2750 6750 3000 6750
+Wire Wire Line
+	3300 6750 3350 6750
+Wire Wire Line
+	3650 6750 3950 6750
+Wire Wire Line
+	3950 6750 3950 7000
+Connection ~ 3950 7000
+Wire Wire Line
+	1950 7200 2750 7200
+Wire Wire Line
+	2100 7200 2100 7250
+Connection ~ 2100 7200
+Wire Wire Line
+	3200 4800 3250 4800
+Wire Wire Line
+	3250 4800 3250 5150
+Connection ~ 3250 5100
+Wire Wire Line
+	3250 5450 3250 5500
+Wire Wire Line
+	2850 5100 3250 5100
+Wire Wire Line
+	3200 4700 4050 4700
+Wire Wire Line
+	3850 4700 3850 5100
+Connection ~ 3850 4700
+Wire Wire Line
+	1250 3250 1250 3950
+Wire Wire Line
+	1250 3950 2850 3950
+Wire Wire Line
+	2850 3950 2850 3150
+Wire Wire Line
+	2700 3550 2900 3550
+Wire Wire Line
+	3200 3550 3700 3550
+Wire Wire Line
+	2700 3650 2900 3650
+Wire Wire Line
+	3200 3650 3700 3650
+Wire Wire Line
+	1100 800  1100 1200
+Wire Wire Line
+	750  1100 1100 1100
+Connection ~ 1100 1100
+Wire Wire Line
+	3550 3750 3550 3550
+Connection ~ 3550 3550
+Wire Wire Line
+	3300 3750 3300 3650
+Connection ~ 3300 3650
+Wire Wire Line
+	2700 3250 3350 3250
+Wire Wire Line
+	2800 1700 3650 1700
+Connection ~ 3650 1700
+Wire Wire Line
+	2800 1550 2950 1550
+Wire Wire Line
+	2950 1550 2950 1700
+Connection ~ 2950 1700
+Wire Wire Line
+	3250 1600 3250 1700
+Connection ~ 3250 1700
+Wire Wire Line
+	3250 1150 3250 1300
+Wire Wire Line
+	2050 6350 2300 6350
+Wire Wire Line
+	4400 6350 4600 6350
+Wire Wire Line
+	3650 1700 3650 1800
+Wire Wire Line
+	5550 2950 5550 3100
+Wire Wire Line
+	5300 3400 5650 3400
+Connection ~ 5550 3400
+Wire Wire Line
+	5300 3700 5300 3850
+Wire Wire Line
+	5550 3400 5550 3650
+Wire Wire Line
+	5500 6900 5800 6900
+Wire Wire Line
+	5650 7150 5700 7150
+Wire Wire Line
+	5700 7150 5700 7000
+Wire Wire Line
+	5700 7000 5800 7000
+Wire Wire Line
+	5600 7550 5650 7550
+Wire Wire Line
+	5650 7550 5650 7450
+Wire Wire Line
+	5650 7450 5800 7450
+Wire Wire Line
+	5250 7350 5800 7350
+Wire Wire Line
+	9150 1150 9800 1150
+Wire Wire Line
+	10650 1150 10300 1150
+Wire Wire Line
+	9350 2550 9800 2550
+Wire Wire Line
+	10300 2550 10550 2550
+Wire Wire Line
+	2550 6250 2600 6250
+Wire Wire Line
+	1100 800  1500 800 
+Connection ~ 1350 800 
+Wire Wire Line
+	4000 6150 4200 6150
+Wire Wire Line
+	2850 3150 2700 3150
+Wire Wire Line
+	4000 6250 4200 6250
+Wire Wire Line
+	1250 3250 1400 3250
+Connection ~ 2150 6350
+Wire Wire Line
+	2550 6250 2550 6500
+Wire Wire Line
+	2550 6500 3950 6500
+Wire Wire Line
+	3950 6500 3950 6400
+Wire Wire Line
+	3950 6400 4500 6400
+Connection ~ 4200 6400
+Wire Wire Line
+	4500 6400 4500 6350
+Connection ~ 4500 6350
+Wire Wire Line
+	2150 6350 2150 6450
+Wire Wire Line
+	2150 6450 2550 6450
+Connection ~ 2550 6450
+Wire Wire Line
+	2100 7550 4250 7550
+Connection ~ 2600 7350
+Wire Wire Line
+	4250 7550 4250 7300
+Connection ~ 2600 7550
+$Comp
+L GND #PWR020
+U 1 1 5B30997E
+P 3350 7600
+F 0 "#PWR020" H 3350 7350 50  0001 C CNN
+F 1 "GND" H 3350 7450 50  0000 C CNN
+F 2 "" H 3350 7600 50  0001 C CNN
+F 3 "" H 3350 7600 50  0001 C CNN
+	1    3350 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 7600 3350 7550
+Connection ~ 3350 7550
+Wire Wire Line
+	2500 3950 2500 4050
+Wire Wire Line
+	2500 4050 3550 4050
+Connection ~ 2500 3950
+Connection ~ 3300 4050
+Wire Wire Line
+	6000 800  8200 800 
+Wire Wire Line
+	6750 3350 6350 3350
+Wire Wire Line
+	6350 3350 6350 800 
+Connection ~ 6350 800 
+Wire Wire Line
+	4000 6050 4700 6050
+Connection ~ 4100 6050
+Connection ~ 4400 6050
+Connection ~ 4600 6050
+Wire Wire Line
+	2600 6550 2600 6500
+Connection ~ 2600 6500
+Wire Wire Line
+	6250 1600 6000 1600
+Wire Wire Line
+	6000 1600 6000 800 
+$Comp
+L LT1963AES8-3.3#PBF IC2
+U 1 1 5B2EC2E6
+P 2600 6050
+F 0 "IC2" H 3850 6350 50  0000 L CNN
+F 1 "LT1963AES8-3.3#PBF" H 3850 6250 50  0000 L CNN
+F 2 "SamacSys_Parts:SOIC127P599X175-8N" H 3850 6150 50  0001 L CNN
+F 3 "http://www.linear.com/docs/3709" H 3850 6050 50  0001 L CNN
+F 4 "LINEAR TECHNOLOGY - LT1963AES8-3.3#PBF - SPANNUNGSREGLER LDO +3.3V,SMD,SOIC8" H 3850 5950 50  0001 L CNN "Description"
+F 5 "1.752" H 3850 5850 50  0001 L CNN "Height"
+F 6 "Linear Technology" H 3850 5750 50  0001 L CNN "Manufacturer_Name"
+F 7 "LT1963AES8-3.3#PBF" H 3850 5650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "7618550" H 3850 5550 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/7618550" H 3850 5450 50  0001 L CNN "RS Price/Stock"
+F 10 "LT1963AES8-3.3#PBF" H 3850 5350 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/lt1963aes8-3.3pbf/linear-technology" H 3850 5250 50  0001 L CNN "Arrow Price/Stock"
+	1    2600 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6050 2600 6050
+Connection ~ 2050 6050
+Connection ~ 2300 6050
+Connection ~ 2500 6050
+$Comp
+L +3.3V #PWR021
+U 1 1 5B31241B
+P 8050 5300
+F 0 "#PWR021" H 8050 5150 50  0001 C CNN
+F 1 "+3.3V" H 8050 5440 50  0000 C CNN
+F 2 "" H 8050 5300 50  0001 C CNN
+F 3 "" H 8050 5300 50  0001 C CNN
+	1    8050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 5B3125A2
+P 7900 5550
+F 0 "C6" H 7925 5650 50  0000 L CNN
+F 1 "10u" H 7925 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7938 5400 50  0001 C CNN
+F 3 "" H 7900 5550 50  0001 C CNN
+	1    7900 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5B312640
+P 8200 5550
+F 0 "C7" H 8225 5650 50  0000 L CNN
+F 1 "100n" H 8225 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8238 5400 50  0001 C CNN
+F 3 "" H 8200 5550 50  0001 C CNN
+	1    8200 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 5300 8200 5300
+Wire Wire Line
+	7900 5300 7900 5400
+Wire Wire Line
+	8200 5300 8200 5400
+Connection ~ 8050 5300
+Wire Wire Line
+	7900 5700 8200 5700
+$Comp
+L GND #PWR022
+U 1 1 5B3128F8
+P 8050 5800
+F 0 "#PWR022" H 8050 5550 50  0001 C CNN
+F 1 "GND" H 8050 5650 50  0000 C CNN
+F 2 "" H 8050 5800 50  0001 C CNN
+F 3 "" H 8050 5800 50  0001 C CNN
+	1    8050 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5800 8050 5700
+Connection ~ 8050 5700
+$Comp
+L SKRPACE010 S1
+U 1 1 5B314309
+P 5550 3650
+F 0 "S1" H 6200 3950 50  0000 L CNN
+F 1 "SKRPACE010" H 6200 3850 50  0000 L CNN
+F 2 "SamacSys_Parts:SMT(4.2X3.2)" H 6200 3750 50  0001 L CNN
+F 3 "http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKRP/SKRPACE010.html" H 6200 3650 50  0001 L CNN
+F 4 "Tactile Switches 4.2x3.2x2.5mm 260gf" H 6200 3550 50  0001 L CNN "Description"
+F 5 "" H 6200 3450 50  0001 L CNN "Height"
+F 6 "ALPS" H 6200 3350 50  0001 L CNN "Manufacturer_Name"
+F 7 "SKRPACE010" H 6200 3250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 6200 3150 50  0001 L CNN "RS Part Number"
+F 9 "" H 6200 3050 50  0001 L CNN "RS Price/Stock"
+F 10 "SKRPACE010" H 6200 2950 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 6200 2850 50  0001 L CNN "Arrow Price/Stock"
+	1    5550 3650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6350 3650
+NoConn ~ 6350 3750
+Wire Wire Line
+	5550 3750 5550 3900
+$Comp
+L Conn_01x06 J3
+U 1 1 5B303501
+P 10450 3750
+F 0 "J3" H 10450 4050 50  0000 C CNN
+F 1 "Conn_01x06" H 10450 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 10450 3750 50  0001 C CNN
+F 3 "" H 10450 3750 50  0001 C CNN
+	1    10450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 5B303656
+P 9800 3550
+F 0 "#PWR023" H 9800 3300 50  0001 C CNN
+F 1 "GND" H 9800 3400 50  0000 C CNN
+F 2 "" H 9800 3550 50  0001 C CNN
+F 3 "" H 9800 3550 50  0001 C CNN
+	1    9800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 3550 10250 3550
+$Comp
+L +3.3V #PWR024
+U 1 1 5B30379A
+P 9950 4050
+F 0 "#PWR024" H 9950 3900 50  0001 C CNN
+F 1 "+3.3V" H 9950 4190 50  0000 C CNN
+F 2 "" H 9950 4050 50  0001 C CNN
+F 3 "" H 9950 4050 50  0001 C CNN
+	1    9950 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 4050 10250 4050
+Text GLabel 10250 3650 0    60   BiDi ~ 0
+IO5
+Text GLabel 10250 3750 0    60   BiDi ~ 0
+IO18
+Text GLabel 10250 3850 0    60   BiDi ~ 0
+IO19
+Text GLabel 10250 3950 0    60   BiDi ~ 0
+IO23
+NoConn ~ 9800 2650
+NoConn ~ 10300 2650
+NoConn ~ 8100 1550
+Wire Wire Line
+	8300 1550 8200 1550
+Connection ~ 8200 1550
+$EndSCHEMATC
